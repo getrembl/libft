@@ -27,5 +27,5 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		len--;
 		i++;
 	}
-	return (ret);
+	return (dst);
 }
