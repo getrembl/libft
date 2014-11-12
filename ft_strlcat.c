@@ -1,5 +1,3 @@
-
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -8,7 +6,7 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 11:28:36 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/07 18:25:42 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/12 09:39:48 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,21 +14,20 @@
 
 size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t 			ret;
-	int j;
-	unsigned int	i;
+	size_t	ret;
+	size_t	i;
+	size_t	j;
 
-	i = ft_strlen(dst);
 	j = 0;
-	while (*src != '\0' && size != 0)
+	i = ft_strlen(dst);
+	while (src[j] != '\0' && size != 0)
 	{
-		src++;
-		size--;
 		j++;
+		size--;
 	}
 	if (size == 0)
 	{
-		ret = size + j + i;
+		ret = j + ft_strlen (src);
 		return ((size_t)ret);
 	}
 	else

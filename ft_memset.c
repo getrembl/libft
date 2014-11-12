@@ -6,7 +6,7 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 10:50:34 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/07 12:45:01 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/07 11:18:23 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ void	*ft_memset(void *b, int c, size_t len)
 	i = 0;
 	while (len != 0)
 	{
-	     rt[i] = (char)c;
-	     i++;	
-	     len--;
+		rt[i] = (char)c;
+		i++;
+		len--;
 	}
-	return (b);
+	return (rt);
 }

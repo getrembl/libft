@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memdel.c                                        :+:      :+:    :+:   */
+/*   ft_word_long.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/07 19:25:27 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/10 11:16:09 by sdurr            ###   ########.fr       */
+/*   Created: 2014/11/12 15:18:07 by sdurr             #+#    #+#             */
+/*   Updated: 2014/11/12 16:23:09 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-void	ft_memdel(void **ap)
+int		ft_word_long(char *s, char c, int i)
 {
-	if (*ap != NULL)
-		free(*ap);
-	*ap = NULL;
+	int len;
+
+	len = 0;
+	while (s[i] != c)
+	{
+		len++;
+		i++;
+	}
+	if (s[i] == '\0')
+		return (-1);
+	else
+		return (len);
 }
