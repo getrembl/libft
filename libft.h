@@ -6,7 +6,7 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:31:39 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/12 16:12:16 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/13 11:09:08 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ char		*ft_strnew(size_t size);
 char		*ft_strtrim(char const *s);
 char		*ft_strmap(char const *s, char (*f)(char));
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char		*ft_itoa(int n);
 
 char		**ft_strsplit(char const *s, char c);
 
@@ -78,5 +79,7 @@ void		ft_bzero(void *s, size_t n);
 int			ft_count_char(char *s, char c);
 int			ft_word_long(char *s, char c, int i);
 int			ft_copy_tmp(char *s, int i, char c, char *tmp);
+int			ft_long_int(int n);
+char		*ft_revers(char *str);
 
 #endif

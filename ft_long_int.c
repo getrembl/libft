@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_long_int.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 14:14:36 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/13 14:46:17 by sdurr            ###   ########.fr       */
+/*   Created: 2014/11/13 09:29:15 by sdurr             #+#    #+#             */
+/*   Updated: 2014/11/13 10:16:58 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+int		ft_long_int(int n)
 {
-	int i;
+	int ret;
 
-	i = ft_strlen(s) - 1;
-	if (!s[i])
-		return (NULL);
-	if (c == 0)
-		return ((char*)&s[ft_strlen(s)]);
-	while (s[i] != (char)c && s[i] != '\0')
-		i--;
-	return ((char*)&s[i]);
+	ret = 1;
+	if (n < 0)
+	{
+		ret++;
+		n = n * -1;
+	}
+	while (n > 0)
+	{
+		n = n / 10;
+		ret++;
+	}
+	return (ret);
 }

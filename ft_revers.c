@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_revers.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 14:14:36 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/13 14:46:17 by sdurr            ###   ########.fr       */
+/*   Created: 2014/11/13 09:54:05 by sdurr             #+#    #+#             */
+/*   Updated: 2014/11/13 11:20:39 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_revers(char *str)
 {
-	int i;
+	int		len;
+	int		i;
+	char	tmp;
 
-	i = ft_strlen(s) - 1;
-	if (!s[i])
-		return (NULL);
-	if (c == 0)
-		return ((char*)&s[ft_strlen(s)]);
-	while (s[i] != (char)c && s[i] != '\0')
-		i--;
-	return ((char*)&s[i]);
+	len = ft_strlen(str) - 1;
+	i = 0;
+	if (str[i] == '-')
+		i++;
+	while (i < len)
+	{
+		tmp = str[i];
+		str[i] = str[len];
+		str[len] = tmp;
+		i++;
+		len--;
+	}
+	return (str);
 }

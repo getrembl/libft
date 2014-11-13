@@ -6,7 +6,7 @@
 #    By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/10 10:41:23 by sdurr             #+#    #+#              #
-#    Updated: 2014/11/12 17:05:09 by sdurr            ###   ########.fr        #
+#    Updated: 2014/11/13 11:24:34 by sdurr            ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -71,6 +71,9 @@ SRCS = ft_atoi.c\
 			ft_copy_tmp.c\
 			ft_count_char.c\
 			ft_word_long.c\
+			ft_itoa.c\
+			ft_long_int.c\
+			ft_revers.c\
 
 OBJS = $(SRCS:.c=.o)
 
