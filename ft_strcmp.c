@@ -6,12 +6,11 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 19:08:53 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/07 19:10:40 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 14:08:58 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int		ft_strcmp(const char *s1, const char *s2)
 {

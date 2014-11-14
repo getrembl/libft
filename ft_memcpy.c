@@ -6,7 +6,7 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 12:23:27 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/07 12:56:50 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 12:00:15 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,16 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	int			i;
 
 	i = 0;
-	ret = dst;
-	srcs = src;
-	while (n != 0)
+	if (dst || src)
 	{
-		ret[i] = srcs[i];
-		i++;
-		n--;
+		ret = dst;
+		srcs = src;
+		while (n != 0)
+		{
+			ret[i] = srcs[i];
+			i++;
+			n--;
+		}
 	}
 	return (ret);
 }

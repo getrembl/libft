@@ -6,12 +6,11 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 10:03:04 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/11 11:36:47 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 14:24:01 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strtrim(char const *s)
 {

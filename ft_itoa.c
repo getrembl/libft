@@ -6,11 +6,10 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/12 17:11:27 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/13 11:21:02 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 14:23:18 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_itoa(int n)

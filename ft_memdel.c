@@ -6,11 +6,10 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 19:25:27 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/10 11:16:09 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 14:14:48 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	ft_memdel(void **ap)

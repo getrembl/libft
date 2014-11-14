@@ -6,11 +6,10 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:11:09 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/10 11:19:03 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 14:15:56 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char		*ft_strnew(size_t size)
@@ -19,8 +18,7 @@ char		*ft_strnew(size_t size)
 	int		i;
 
 	i = 0;
-	ret = (char *)malloc(sizeof(char*) * size);
-	if (ret == NULL)
+	if (!(ret = (char *)malloc(sizeof(char*) * size)))
 		return (NULL);
 	while (size != 0)
 	{

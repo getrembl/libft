@@ -6,7 +6,7 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:45:17 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/12 13:28:14 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 13:45:55 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,8 @@ char	*ft_strdup(const char *s1)
 
 	i = 0;
 	cpt = ft_strlen(s1);
-	dest = (char *)malloc(sizeof(char*) * cpt + 1);
-	if (dest == NULL)
-		return (0);
+	if (!(dest = (char *)malloc(sizeof(char*) * cpt + 1)))
+		return (NULL);
 	while (s1[i] != '\0')
 	{
 		dest[i] = s1[i];

@@ -6,7 +6,7 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:44:08 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/04 15:55:20 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 13:50:22 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,15 @@ char	*ft_strcpy(char *dst, const char *src)
 	int i;
 
 	i = 0;
-	while (src[i] != '\0')
+	if (src || dst)
 	{
-		dst[i] = src[i];
-		i++;
+		while (src[i] != '\0')
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+		return (dst);
 	}
-	dst[i] = '\0';
-	return (dst);
+	return (NULL);
 }

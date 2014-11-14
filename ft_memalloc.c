@@ -6,11 +6,10 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 19:21:00 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/10 11:17:52 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 14:24:53 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	*ft_memalloc(size_t size)
@@ -18,7 +17,8 @@ void	*ft_memalloc(size_t size)
 	char	*s;
 	void	*ret;
 
-	ret = (void *)malloc(size);
+	if (!(ret = (void *)malloc(size)))
+		return (NULL);
 	s = (char *)ret;
 	if (ret != NULL)
 	{

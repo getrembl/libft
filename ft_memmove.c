@@ -6,11 +6,10 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 13:40:36 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/12 09:12:55 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/14 13:56:03 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
