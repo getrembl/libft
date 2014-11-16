@@ -6,7 +6,7 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 10:03:04 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/14 14:24:01 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/16 08:38:56 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@ char	*ft_strtrim(char const *s)
 		i++;
 	while (s[i] != '\0')
 		r[d++] = s[i++];
-	if (!(ret2 = (char *)malloc(sizeof(char*) * ft_strlen(s))))
-		return (NULL);
 	i = ft_strlen(r) - 1;
 	d = 0;
 	while ((r[i] == ' ') || (r[i] == ',') || (r[i] == '\n') || (r[i] == '\t'))
 		i--;
+	if (!(ret2 = (char *)malloc(sizeof(char*) * i + 1)))
+		return (NULL);
 	while (d <= i)
 		ret2[d++] = *r++;
 	ret2[d] = '\0';
