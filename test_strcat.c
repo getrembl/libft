@@ -1,40 +1,29 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   test_strcat.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 12:06:20 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/18 19:34:38 by sdurr            ###   ########.fr       */
+/*   Created: 2014/11/18 19:21:41 by sdurr             #+#    #+#             */
+/*   Updated: 2014/11/18 19:36:14 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
+#include <stdio.h>
 
-char		*ft_strcat(char *s1, const char *s2)
+int main()
 {
-	int i;
+	char s2[]="1234";
+	char s3[]="";
+	char s1[10];
+	char s4[]="abcde";
+	char s5[]="abcde";
 
-	i = 0;
-	if (s1 != NULL || s2 != NULL)
-	{
-		while (s1[i] != '\0')
-			i++;
-		if (*s2 != '\0')
-		{
-			while (*s2 != '\0')
-			{
-				s1[i] = *s2;
-				s2++;
-				i++;
-			}
-		}
-		else
-			s1[i] = '\0';
-		return (s1);
-	}
-	return (NULL);
+	printf("%s\n", ft_strcat(s4, s2));
+	printf("%s\n", strcat(NULL, s5));
+	printf("%s\n", ft_strcat(s4, s2));
+	printf("%s",ft_strcat(s3, s2));
+	return (0);
 }
