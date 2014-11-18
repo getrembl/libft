@@ -6,7 +6,7 @@
 #    By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/10 10:41:23 by sdurr             #+#    #+#              #
-#    Updated: 2014/11/16 09:11:57 by sdurr            ###   ########.fr        #
+#    Updated: 2014/11/17 13:50:05 by sdurr            ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -51,9 +51,9 @@ SRCS = ft_atoi.c\
         	ft_striter.c\
         	ft_striteri.c\
         	ft_strjoin.c\
-        	ft_strlcat.c\
         	ft_strlen.c\
-        	ft_strncat.c\
+        	ft_strlcat.c\
+			ft_strncat.c\
         	ft_strncmp.c\
         	ft_strncpy.c\
         	ft_strnequ.c\

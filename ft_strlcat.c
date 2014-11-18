@@ -6,7 +6,7 @@
 /*   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 11:28:36 by sdurr             #+#    #+#             */
-/*   Updated: 2014/11/16 09:00:17 by sdurr            ###   ########.fr       */
+/*   Updated: 2014/11/18 17:14:55 by sdurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t		ft_strlcat(char *dst, const char *src, size_t size)
 
 	tmp = size;
 	i = 0;
-	dst = ft_strnew(size);
+	dst = ft_strdup(dst);
 	if (src)
 	{
 		while (size > 1)
